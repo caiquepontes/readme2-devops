@@ -1,0 +1,23 @@
+Configure um servidor nginx com dois server names servindo uma rota chamada "desafio".
+
+Em um dos server names, o retorno para um GET deve ser "desafio1".
+
+Para o outro server name, o retorno para um GET deve ser "desafio2".
+
+
+
+1. baixar o arquivo html para sua maquina
+
+2. criar o container com o imagem nginx e montar os arquivos .html
+   
+   docker run -d -p 8000:80 -v ~/nginx-html:/usr/share/nginx/html --name server-names-nginx-my nginx
+
+   http://localhost:8000/index2.html - DESAFIO 2
+   http://localhost:8000/ - DESAFIO 1
+   
+   
+   
+   
+      
+
+
